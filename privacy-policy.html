@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="《星域守卫者》隐私政策，开发者玄霖工作室。说明 TapTap 登录、实名认证与防沉迷、本地存档及个人信息处理方式。">
+  <meta name="robots" content="index,follow">
+  <title>星域守卫者隐私政策 | 玄霖工作室</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230b1728'/%3E%3Cpath d='M16 4.5l3.1 7.8 8.1 1-6.2 5.2 2 8-7-4.2-7 4.2 2-8-6.2-5.2 8.1-1z' fill='%2357d6ff'/%3E%3C/svg%3E">
+  <style>
+    :root {
+      --ink: #0b1728;
+      --muted: #5b6b7f;
+      --line: #dbe4ee;
+      --paper: #ffffff;
+      --bg: #f3f6f9;
+      --accent: #0f7c88;
+      --accent-soft: #e8f5f5;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: "Segoe UI", "Microsoft YaHei", "PingFang SC", "Noto Sans SC", sans-serif;
+      font-size: 16px;
+      line-height: 1.85;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .skip {
+      position: absolute;
+      left: -9999px;
+      top: 0;
+      background: #fff;
+      color: var(--ink);
+      padding: 10px 16px;
+      z-index: 10;
+    }
+    .skip:focus { left: 16px; top: 16px; }
+
+    header {
+      background: var(--ink);
+      color: #f3f9ff;
+      padding: 60px 24px 56px;
+      border-bottom: 3px solid #57d6ff;
+    }
+
+    .wrap {
+      width: 100%;
+      max-width: 920px;
+      margin: 0 auto;
+    }
+
+    .kicker {
+      margin: 0 0 18px;
+      color: #9bc5de;
+      font-size: 14px;
+      letter-spacing: 0.04em;
+    }
+
+    h1 {
+      margin: 0;
+      font-family: Georgia, "Noto Serif SC", "Songti SC", "SimSun", serif;
+      font-size: clamp(30px, 4.2vw, 46px);
+      font-weight: 600;
+      line-height: 1.3;
+      letter-spacing: 0.01em;
+    }
+
+    .subtitle {
+      margin: 16px 0 0;
+      max-width: 760px;
+      color: #c6d8e6;
+      font-size: 15px;
+      line-height: 1.8;
+    }
+
+    .header-meta {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px 28px;
+      margin-top: 30px;
+      padding-top: 22px;
+      border-top: 1px solid rgba(255, 255, 255, 0.16);
+    }
+
+    .meta-item { min-width: 0; }
+    .meta-label {
+      display: block;
+      color: #8fb1c9;
+      font-size: 12px;
+      letter-spacing: 0.04em;
+    }
+    .meta-value {
+      display: block;
+      margin-top: 4px;
+      color: #f7fbff;
+      font-size: 15px;
+      word-break: break-word;
+    }
+    .meta-value a {
+      color: #8ce3ec;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(140, 227, 236, 0.45);
+    }
+    .meta-value a:hover { border-bottom-color: #8ce3ec; }
+
+    main {
+      max-width: 920px;
+      margin: -32px auto 64px;
+      padding: 48px 64px 56px;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      box-shadow: 0 2px 6px rgba(11, 23, 40, 0.06);
+    }
+
+    .intro {
+      margin: 0;
+      padding: 18px 20px;
+      background: var(--accent-soft);
+      border-left: 3px solid var(--accent);
+      color: #24404a;
+      font-size: 15px;
+    }
+
+    section { margin-top: 42px; }
+    section:first-of-type { margin-top: 34px; }
+
+    h2 {
+      display: flex;
+      align-items: baseline;
+      gap: 12px;
+      margin: 0 0 18px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--line);
+      font-size: 22px;
+      line-height: 1.4;
+      font-weight: 600;
+    }
+
+    .num {
+      flex: 0 0 auto;
+      color: var(--accent);
+      font-family: Georgia, "Noto Serif SC", serif;
+      font-size: 15px;
+      font-weight: 500;
+    }
+
+    h3 {
+      margin: 24px 0 8px;
+      font-size: 17px;
+      font-weight: 600;
+    }
+
+    p { margin: 0 0 14px; }
+    p:last-child { margin-bottom: 0; }
+    ul { margin: 8px 0 14px; padding-left: 1.5em; }
+    li { margin: 4px 0; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .note {
+      margin: 18px 0 0;
+      padding: 14px 16px;
+      border: 1px solid var(--line);
+      background: #f8fafc;
+      color: #33475b;
+      font-size: 14px;
+    }
+
+    .table-wrap {
+      margin: 16px 0 8px;
+      overflow-x: auto;
+      border: 1px solid var(--line);
+    }
+
+    table {
+      width: 100%;
+      min-width: 660px;
+      border-collapse: collapse;
+      table-layout: fixed;
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+    colgroup col:nth-child(1) { width: 18%; }
+    colgroup col:nth-child(2) { width: 20%; }
+    colgroup col:nth-child(3) { width: 24%; }
+    colgroup col:nth-child(4) { width: 38%; }
+
+    th, td {
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--line);
+      vertical-align: top;
+      text-align: left;
+      word-break: break-word;
+    }
+
+    th {
+      background: #f2f6fa;
+      color: #24384e;
+      font-weight: 600;
+    }
+
+    tr:last-child td { border-bottom: 0; }
+
+    .contact {
+      margin-top: 20px;
+      padding: 20px 22px;
+      background: #f6f9fc;
+      border: 1px solid var(--line);
+    }
+
+    .contact p { margin: 4px 0; }
+    .contact strong { color: #1f3448; }
+
+    footer {
+      max-width: 920px;
+      margin: 0 auto 48px;
+      padding: 0 8px;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.7;
+    }
+
+    @media (max-width: 720px) {
+      header { padding: 40px 20px 44px; }
+      .header-meta { grid-template-columns: 1fr; gap: 14px; }
+      main { margin: -24px 12px 40px; padding: 30px 20px 36px; }
+      h2 { font-size: 20px; }
+      .intro { padding: 16px; }
+      footer { margin: 0 16px 32px; }
+    }
+
+    @media print {
+      body { background: #fff; }
+      header { background: #fff; color: #000; border-bottom: 1px solid #000; padding: 20px 0; }
+      .kicker, .subtitle, .header-meta { color: #000; }
+      .header-meta { border-top-color: #999; }
+      .meta-label, .meta-value, .meta-value a { color: #000; }
+      main { margin: 0; padding: 0; border: 0; box-shadow: none; max-width: none; }
+      .skip, footer { display: none; }
+      a { color: #000; text-decoration: none; }
+      section { break-inside: auto; }
+      h2 { break-after: avoid; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">跳到正文</a>
+
+  <header>
+    <div class="wrap">
+      <p class="kicker">星域守卫者 / 隐私政策</p>
+      <h1>星域守卫者隐私政策</h1>
+      <p class="subtitle">本政策说明《星域守卫者》如何处理你的账号、设备、本地存档和实名认证相关信息。请在使用游戏前阅读。</p>
+      <div class="header-meta">
+        <div class="meta-item">
+          <span class="meta-label">开发者主体</span>
+          <span class="meta-value">玄霖工作室</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">联系邮箱</span>
+          <span class="meta-value"><a href="mailto:3305834589@qq.com">3305834589@qq.com</a></span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">生效日期</span>
+          <span class="meta-value">2026 年 11 月 14 日</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <p class="intro">本政策适用于《星域守卫者》Android 版本。我们按照《中华人民共和国个人信息保护法》《中华人民共和国网络安全法》等法律法规处理你的个人信息。使用 TapTap 账号登录时，你还应同时阅读 TapTap 平台自身的隐私政策。</p>
+
+    <section>
+      <h2><span class="num">一</span>适用范围与开发者</h2>
+      <p>《星域守卫者》由玄霖工作室开发和运营。本政策适用于游戏客户端、TapTap 登录、TapSDK 实名认证/防沉迷以及本地存档功能。</p>
+      <p>本政策不替代 TapTap 平台自身的隐私政策。TapTap 账号注册、账号安全、社区功能等由 TapTap 平台负责，适用 TapTap 的相关规则。</p>
+    </section>
+
+    <section>
+      <h2><span class="num">二</span>我们收集哪些信息</h2>
+      <p>我们只收集实现游戏功能所必需的信息，具体包括：</p>
+      <ul>
+        <li><strong>TapTap 账号信息：</strong>当你使用 TapTap 登录时，TapSDK 会向我们返回 open_id、union_id、昵称、头像和邮箱（如你授权）。我们只用它区分不同玩家的本地存档，不建立独立的账号密码体系。</li>
+        <li><strong>设备与网络信息：</strong>为完成 TapTap 登录、实名认证/防沉迷和正版验证，TapSDK 会收集网络状态、WiFi 信息、设备型号、系统版本、Android ID，以及设备上已安装的 TapTap 应用信息。</li>
+        <li><strong>本地游戏数据：</strong>存档名称、关卡进度、星级、晶体、成就、装配、预设和设置保存在你的设备本地应用私有目录，不会因为 TapTap 登录自动上传到我们的服务器。</li>
+        <li><strong>实名认证信息：</strong>当你触发实名/防沉迷时，TapSDK 合规认证会按国家新闻出版署相关规定处理实名信息，并向游戏返回合规结果码；游戏只保存结果状态，不保存身份证号等明文实名信息。</li>
+      </ul>
+      <p class="note">当前版本未接入 TapADN 或其他广告 SDK，也未接入生成式 AI 服务。若未来接入，我们会在本页面更新说明并依法重新取得你的同意。</p>
+    </section>
+
+    <section>
+      <h2><span class="num">三</span>我们如何使用信息</h2>
+      <ul>
+        <li>完成 TapTap 登录，识别玩家并建立按 TapTap 账号隔离的本地存档；</li>
+        <li>完成实名认证、防沉迷时长/时段校验和正版验证；</li>
+        <li>维护游戏进度、存档和基础运行安全；</li>
+        <li>处理你主动发起的客服、投诉或数据权利请求。</li>
+      </ul>
+      <p>我们不会出售你的个人信息，也不会把信息用于本政策未说明的目的。</p>
+    </section>
+
+    <section>
+      <h2><span class="num">四</span>权限说明</h2>
+      <ul>
+        <li><strong>网络权限（INTERNET）：</strong>访问 TapTap 登录和合规认证服务；</li>
+        <li><strong>网络状态权限（ACCESS_NETWORK_STATE）：</strong>判断网络是否可用，保证登录和认证流程正常；</li>
+        <li>游戏不会申请通讯录、短信、定位、相机、麦克风等与本游戏功能无关的权限。</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2><span class="num">五</span>第三方 SDK</h2>
+      <div class="table-wrap">
+        <table>
+          <colgroup>
+            <col><col><col><col>
+          </colgroup>
+          <thead>
+            <tr>
+              <th>SDK 名称</th>
+              <th>提供方</th>
+              <th>用途</th>
+              <th>收集的信息</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>TapSDK（tap-core、tap-login、tap-compliance）</td>
+              <td>易玩（上海）网络科技有限公司</td>
+              <td>TapTap 登录、实名认证/防沉迷、正版验证</td>
+              <td>网络状态、WiFi 信息、设备型号、系统版本、Android ID、已安装 TapTap 应用信息，以及登录返回的 open_id、union_id、昵称、头像、邮箱。</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>TapSDK 隐私政策：<a href="https://developer.taptap.cn/docs/sdk/start/agreement/" target="_blank" rel="noopener noreferrer">https://developer.taptap.cn/docs/sdk/start/agreement/</a></p>
+      <p>除 TapSDK 和依法配合的监管机关外，我们不会向其他第三方共享你的个人信息。</p>
+    </section>
+
+    <section>
+      <h2><span class="num">六</span>存储、共享与保护</h2>
+      <p>本地存档保存在你的设备应用私有目录；卸载游戏会删除本地存档。TapSDK 相关数据按 TapSDK 隐私政策及法律法规要求的期限保存。</p>
+      <p>我们采用访问控制、最小必要等安全措施，防止信息被未授权访问、泄露或篡改。除取得你的同意、履行法定义务或配合监管要求外，我们不会向第三方共享你的个人信息。</p>
+    </section>
+
+    <section>
+      <h2><span class="num">七</span>未成年人保护</h2>
+      <p>我们重视未成年人保护。游戏接入 TapSDK 合规认证，在进入游戏前执行实名认证和防沉迷校验；未通过或返回不可游玩状态时，游戏会阻止进入关卡。</p>
+      <p>监护人如对未成年人的信息有疑问，或需要协助处理相关请求，可通过 <a href="mailto:3305834589@qq.com">3305834589@qq.com</a> 联系我们。</p>
+    </section>
+
+    <section>
+      <h2><span class="num">八</span>你的权利</h2>
+      <p>你可以在游戏内切换或删除本地存档，可以退出 TapTap 登录，也可以通过 <a href="mailto:3305834589@qq.com">3305834589@qq.com</a> 申请查阅、更正、删除个人信息，或撤回同意。我们会在法律法规要求的期限内处理。</p>
+      <p>撤回同意后，TapTap 登录、实名认证和防沉迷相关功能可能无法继续使用。</p>
+    </section>
+
+    <section>
+      <h2><span class="num">九</span>政策更新</h2>
+      <p>功能或法规变化时，我们会更新本政策并在页面标注更新日期；重大变化会通过游戏内提示或 TapTap 页面说明。</p>
+    </section>
+
+    <section>
+      <h2><span class="num">十</span>联系我们</h2>
+      <div class="contact">
+        <p><strong>开发者：</strong>玄霖工作室</p>
+        <p><strong>联系邮箱：</strong><a href="mailto:3305834589@qq.com">3305834589@qq.com</a></p>
+        <p><strong>适用游戏：</strong>星域守卫者（Android）</p>
+        <p><strong>更新日期：</strong>2026 年 11 月 14 日</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>星域守卫者隐私政策 · 玄霖工作室。若本页面内容与游戏内展示不一致，以本页面最新版本为准。</p>
+  </footer>
+</body>
+</html>
