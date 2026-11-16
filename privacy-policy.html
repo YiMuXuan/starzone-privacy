@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="《星域守卫者》隐私政策，开发者玄霖工作室。说明 TapTap 登录、实名认证与防沉迷、本地存档及个人信息处理方式。">
+  <meta name="description" content="《星域守卫者》隐私政策，开发者玄霖工作室。说明 TapTap 登录、实名认证与防沉迷、本地存档、TapTap 云存档及个人信息处理方式。">
   <meta name="robots" content="index,follow">
   <title>星域守卫者隐私政策 | 玄霖工作室</title>
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230b1728'/%3E%3Cpath d='M16 4.5l3.1 7.8 8.1 1-6.2 5.2 2 8-7-4.2-7 4.2 2-8-6.2-5.2 8.1-1z' fill='%2357d6ff'/%3E%3C/svg%3E">
@@ -256,7 +256,7 @@
     <div class="wrap">
       <p class="kicker">星域守卫者 / 隐私政策</p>
       <h1>星域守卫者隐私政策</h1>
-      <p class="subtitle">本政策说明《星域守卫者》如何处理你的账号、设备、本地存档和实名认证相关信息。请在使用游戏前阅读。</p>
+      <p class="subtitle">本政策说明《星域守卫者》如何处理你的账号、设备、本地存档、TapTap 云存档和实名认证相关信息。请在使用游戏前阅读。</p>
       <div class="header-meta">
         <div class="meta-item">
           <span class="meta-label">开发者主体</span>
@@ -268,7 +268,7 @@
         </div>
         <div class="meta-item">
           <span class="meta-label">生效日期</span>
-          <span class="meta-value">2026 年 11 月 14 日</span>
+          <span class="meta-value">2026 年 11 月 16 日</span>
         </div>
       </div>
     </div>
@@ -279,19 +279,21 @@
 
     <section>
       <h2><span class="num">一</span>适用范围与开发者</h2>
-      <p>《星域守卫者》由玄霖工作室开发和运营。本政策适用于游戏客户端、TapTap 登录、TapSDK 实名认证/防沉迷以及本地存档功能。</p>
-      <p>本政策不替代 TapTap 平台自身的隐私政策。TapTap 账号注册、账号安全、社区功能等由 TapTap 平台负责，适用 TapTap 的相关规则。</p>
+      <p>《星域守卫者》由玄霖工作室开发和运营。本政策适用于游戏客户端、TapTap 登录、TapSDK 实名认证/防沉迷、本地存档与 TapTap 云存档功能。</p>
+      <p>云存档依赖 TapTap 登录：未登录 TapTap 时只能使用本地存档；登录后可按 TapTap 账号同步云存档。TapTap 账号注册、账号安全、社区功能及云端存储服务由 TapTap 平台负责，适用 TapTap 的相关规则。</p>
     </section>
 
     <section>
       <h2><span class="num">二</span>我们收集哪些信息</h2>
       <p>我们只收集实现游戏功能所必需的信息，具体包括：</p>
       <ul>
-        <li><strong>TapTap 账号信息：</strong>当你使用 TapTap 登录时，TapSDK 会向我们返回 open_id、union_id、昵称、头像和邮箱（如你授权）。我们只用它区分不同玩家的本地存档，不建立独立的账号密码体系。</li>
+        <li><strong>TapTap 账号信息：</strong>当你使用 TapTap 登录时，TapSDK 会向我们返回 open_id、union_id、昵称、头像和邮箱（如你授权）。open_id 或 union_id 用于区分不同玩家、建立本地档位与云存档的归属关系；游戏不建立独立的账号密码体系。</li>
         <li><strong>设备与网络信息：</strong>为完成 TapTap 登录、实名认证/防沉迷和正版验证，TapSDK 会收集网络状态、WiFi 信息、设备型号、系统版本、Android ID，以及设备上已安装的 TapTap 应用信息。</li>
-        <li><strong>本地游戏数据：</strong>存档名称、关卡进度、星级、晶体、成就、装配、预设和设置保存在你的设备本地应用私有目录，不会因为 TapTap 登录自动上传到我们的服务器。</li>
+        <li><strong>本地游戏数据：</strong>存档名称、关卡进度、星级、晶体、成就、装配、预设和设置默认保存在你的设备本地应用私有目录，不会上传到玄霖工作室自建的服务器。</li>
+        <li><strong>云存档数据：</strong>当你使用云存档功能时，上述存档数据以及与本游戏关联的 TapTap 账号标识（open_id 或 union_id，以登录返回为准）会上传至 TapTap 提供的云端存储，用于在你更换设备、卸载重装或清除本地数据后恢复游戏进度。</li>
         <li><strong>实名认证信息：</strong>当你触发实名/防沉迷时，TapSDK 合规认证会按国家新闻出版署相关规定处理实名信息，并向游戏返回合规结果码；游戏只保存结果状态，不保存身份证号等明文实名信息。</li>
       </ul>
+      <p class="note">云存档说明：当前版本每个 TapTap 账号只维护一条名为 starzone_save 的云端存档，整包包含最多四个本地档位及各自的进度、装配和设置，不会为每个档位单独创建多条云存档。TapTap 对单个云存档文件限制为 10MB，单玩家在本游戏下最多 100 条云存档、总容量 100MB；当前版本只使用一条，通常不会触及该上限。</p>
       <p class="note">当前版本未接入 TapADN 或其他广告 SDK，也未接入生成式 AI 服务。若未来接入，我们会在本页面更新说明并依法重新取得你的同意。</p>
     </section>
 
@@ -300,6 +302,7 @@
       <ul>
         <li>完成 TapTap 登录，识别玩家并建立按 TapTap 账号隔离的本地存档；</li>
         <li>完成实名认证、防沉迷时长/时段校验和正版验证；</li>
+        <li>将存档上传至 TapTap 云端，在其他设备下载并恢复游戏进度；</li>
         <li>维护游戏进度、存档和基础运行安全；</li>
         <li>处理你主动发起的客服、投诉或数据权利请求。</li>
       </ul>
@@ -309,7 +312,7 @@
     <section>
       <h2><span class="num">四</span>权限说明</h2>
       <ul>
-        <li><strong>网络权限（INTERNET）：</strong>访问 TapTap 登录和合规认证服务；</li>
+        <li><strong>网络权限（INTERNET）：</strong>访问 TapTap 登录、合规认证服务和云存档上传/下载服务；</li>
         <li><strong>网络状态权限（ACCESS_NETWORK_STATE）：</strong>判断网络是否可用，保证登录和认证流程正常；</li>
         <li>游戏不会申请通讯录、短信、定位、相机、麦克风等与本游戏功能无关的权限。</li>
       </ul>
@@ -337,6 +340,12 @@
               <td>TapTap 登录、实名认证/防沉迷、正版验证</td>
               <td>网络状态、WiFi 信息、设备型号、系统版本、Android ID、已安装 TapTap 应用信息，以及登录返回的 open_id、union_id、昵称、头像、邮箱。</td>
             </tr>
+            <tr>
+              <td>TapTap 云存档（tap-cloudsave）</td>
+              <td>易玩（上海）网络科技有限公司</td>
+              <td>云存档上传、下载与跨设备恢复</td>
+              <td>存档数据（存档名称、关卡进度、星级、晶体、成就、装配、预设和设置）以及与本游戏关联的 TapTap 账号标识（open_id 或 union_id）。</td>
+            </tr>
           </tbody>
         </table>
       </div>
@@ -346,7 +355,8 @@
 
     <section>
       <h2><span class="num">六</span>存储、共享与保护</h2>
-      <p>本地存档保存在你的设备应用私有目录；卸载游戏会删除本地存档。TapSDK 相关数据按 TapSDK 隐私政策及法律法规要求的期限保存。</p>
+      <p>本地存档保存在你的设备应用私有目录；卸载游戏或清除应用数据会删除本地存档。云端存档不会因卸载自动删除，以便你重新安装后恢复进度。云端存档由 TapTap 提供存储服务，保存期限按 TapTap 的规则及其隐私政策、法律法规要求处理；TapSDK 登录与合规相关数据按 TapSDK 隐私政策及法律法规要求保存。</p>
+      <p>你在游戏内删除某个档位时，云端整包存档会在下一次同步时更新，移除该档位；删除当前 TapTap 账号下全部四个档位后，云端对应存档会在下一次同步时删除。你也可以通过本政策末尾的联系邮箱申请删除整条云端存档。</p>
       <p>我们采用访问控制、最小必要等安全措施，防止信息被未授权访问、泄露或篡改。除取得你的同意、履行法定义务或配合监管要求外，我们不会向第三方共享你的个人信息。</p>
     </section>
 
@@ -358,8 +368,8 @@
 
     <section>
       <h2><span class="num">八</span>你的权利</h2>
-      <p>你可以在游戏内切换或删除本地存档，可以退出 TapTap 登录，也可以通过 <a href="mailto:3305834589@qq.com">3305834589@qq.com</a> 申请查阅、更正、删除个人信息，或撤回同意。我们会在法律法规要求的期限内处理。</p>
-      <p>撤回同意后，TapTap 登录、实名认证和防沉迷相关功能可能无法继续使用。</p>
+      <p>你可以在游戏内切换或删除本地档位，删除当前 TapTap 账号下全部四个档位后，云端对应存档会在下一次同步时删除；你也可以退出 TapTap 登录，或通过 <a href="mailto:3305834589@qq.com">3305834589@qq.com</a> 申请查阅、更正、删除云端存档及其他个人信息，或撤回同意。我们会在法律法规要求的期限内处理。</p>
+      <p>撤回同意后，TapTap 登录、实名认证、防沉迷和云存档相关功能将不再可用。</p>
     </section>
 
     <section>
@@ -373,7 +383,7 @@
         <p><strong>开发者：</strong>玄霖工作室</p>
         <p><strong>联系邮箱：</strong><a href="mailto:3305834589@qq.com">3305834589@qq.com</a></p>
         <p><strong>适用游戏：</strong>星域守卫者（Android）</p>
-        <p><strong>更新日期：</strong>2026 年 11 月 15 日</p>
+        <p><strong>更新日期：</strong>2026 年 11 月 16 日</p>
       </div>
     </section>
   </main>
